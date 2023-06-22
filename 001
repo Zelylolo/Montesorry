@@ -1,0 +1,6 @@
+def read_file
+  temp = Hash.new
+  file = JSON.parse(File.read('mybotsfile.conf'))
+  file.each { |bot| temp << bot}
+  puts temp
+end
